@@ -50,8 +50,7 @@ namespace BOFL.Libro.Api.Controllers
 
         [HttpDelete(RouteLibro.Delete)]
         public ActionResult<dominio.Libro> EliminarLibro(int id)
-        {
-           
+        {          
             db.EliminarLibro(id);         
             return Ok(id);
         }
