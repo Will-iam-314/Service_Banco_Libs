@@ -10,9 +10,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using TDB.Ms.Producto.Infraestructura.DBSettings;
+using BOFL.Libro.Infraestructura.DBSettings;
 
-namespace TDB.Ms.Producto.Api
+namespace BOFL.Libro.Api
 {
     public class Startup
     {

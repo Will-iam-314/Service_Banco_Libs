@@ -7,20 +7,26 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TDB.Ms.Producto.Dominio.Entidades
+namespace BOFL.Libro.Dominio.Entidades
 {
     [BsonIgnoreExtraElements]
-    public class Producto
+    public class Libro
     {
         [BsonId]
         [BsonRepresentation(BsonType.ObjectId)]
         public string _id { get; set; }
-        public int IdProducto { get; set; }
+        public int idLibro { get; set; }
 
-        public string Nombre { get; set; }
+        public int isbn { get; set; }
 
-        public decimal Precio { get; set; }
+        public int lib_volumen { get; set; }
 
-        public int Cantidad { get; set; }
+        public int lib_stock { get; set; }
+
+        public string lib_titulo { get; set; }
+
+        public int idEditorial { get; set; }
+        
+        public int idAutor { get; set; }
     }
 }

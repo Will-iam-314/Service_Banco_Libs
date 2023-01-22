@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TDB.Ms.Producto.Infraestructura.DBSettings
+namespace BOFL.Libro.Infraestructura.DBSettings
 {
     public class DBSettings : IDBSettings
     {

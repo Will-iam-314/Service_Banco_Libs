@@ -1,4 +1,4 @@
-﻿namespace TDB.Ms.Producto.Api.Routes
+﻿namespace BOFL.Libro.Api.Routes
 {
     public static class ApiRoutes
     {
@@ -6,16 +6,16 @@
         public const string Version = "v1";
         public const string Base = Root + "/" + Version;
 
-        public static class RouteProducto
+        public static class RouteLibro
         {
             // Read
-            public const string GetAll = Base + "/producto/all";
-            public const string GetById = Base + "/producto/{id}";
+            public const string GetAll = Base + "/libro/all";
+            public const string GetById = Base + "/libro/{id}";
 
             // Write
-            public const string Create = Base + "/producto/create";
-            public const string Update = Base + "/producto/update";
-            public const string Delete = Base + "/producto/delete";
+            public const string Create = Base + "/libro/create";
+            public const string Update = Base + "/libro/update";
+            public const string Delete = Base + "/libro/delete";
 
         }
     }

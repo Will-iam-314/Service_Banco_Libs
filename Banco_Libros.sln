@@ -7,13 +7,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Sistema", "Sistema", "{C1EE
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BankofLibrariesService", "BankofLibrariesService", "{4819275C-1F48-4888-90E9-C64890E8AE3C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TDB.Ms.Producto.Api", "TDB.Ms.Producto.Api\TDB.Ms.Producto.Api.csproj", "{DFC7AAF0-7A5B-4DAD-BC34-3C84833F6B4C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BOFL.Libro.Api", "TDB.Ms.Producto.Api\BOFL.Libro.Api.csproj", "{DFC7AAF0-7A5B-4DAD-BC34-3C84833F6B4C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TDB.Ms.Producto.Dominio", "TDB.Ms.Producto.Dominio\TDB.Ms.Producto.Dominio.csproj", "{18F75423-CC84-4487-8376-2B447E899D35}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BOFL.Libro.Dominio", "TDB.Ms.Producto.Dominio\BOFL.Libro.Dominio.csproj", "{18F75423-CC84-4487-8376-2B447E899D35}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TDB.Ms.Producto.Infraestructura", "TDB.Ms.Producto.Infraestructura\TDB.Ms.Producto.Infraestructura.csproj", "{53A5D15A-070F-4E1E-B7A6-BF44D3A128E2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BOFL.Libro.Infraestructura", "TDB.Ms.Producto.Infraestructura\BOFL.Libro.Infraestructura.csproj", "{53A5D15A-070F-4E1E-B7A6-BF44D3A128E2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TDB.Ms.Producto.Aplicacion", "TDB.Ms.Producto.Aplicacion\TDB.Ms.Producto.Aplicacion.csproj", "{B63E36D4-5521-46BC-8F8C-B68BEA60344B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BOFL.Libro.Aplicacion", "TDB.Ms.Producto.Aplicacion\BOFL.Libro.Aplicacion.csproj", "{B63E36D4-5521-46BC-8F8C-B68BEA60344B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

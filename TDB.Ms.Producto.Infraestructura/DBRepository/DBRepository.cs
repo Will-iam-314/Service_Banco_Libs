@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TDB.Ms.Producto.Infraestructura.DBRepository
+namespace BOFL.Libro.Infraestructura.DBRepository
 {
     public class DBRepository
     {
@@ -17,7 +17,7 @@ namespace TDB.Ms.Producto.Infraestructura.DBRepository
             try
             {
                 client = new MongoClient("mongodb://localhost:27017");
-                db = client.GetDatabase("TDB_productos");
+                db = client.GetDatabase("BancoLibros");
 
             }catch(Exception e)
             {

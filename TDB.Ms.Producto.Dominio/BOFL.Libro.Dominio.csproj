@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TDB.Ms.Producto.Infraestructura\TDB.Ms.Producto.Infraestructura.csproj" />
+    <ProjectReference Include="..\TDB.Ms.Producto.Infraestructura\BOFL.Libro.Infraestructura.csproj" />
   </ItemGroup>
 
 </Project>
