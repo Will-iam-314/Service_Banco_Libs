@@ -17,7 +17,7 @@ namespace BOFL.Libro.Infraestructura.DBRepository
             try
             {
                 client = new MongoClient("mongodb://localhost:27017");
-                db = client.GetDatabase("BancoLibros");
+                db = client.GetDatabase("BD_Libros");
 
             }catch(Exception e)
             {
