@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Producto\Read\**" />
+    <Compile Remove="Producto\Write\**" />
+    <EmbeddedResource Remove="Producto\Read\**" />
+    <EmbeddedResource Remove="Producto\Write\**" />
+    <None Remove="Producto\Read\**" />
+    <None Remove="Producto\Write\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\TDB.Ms.Producto.Dominio\TDB.Ms.Producto.Dominio.csproj" />
+    <ProjectReference Include="..\TDB.Ms.Producto.Infraestructura\TDB.Ms.Producto.Infraestructura.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,4 +1,4 @@
-﻿namespace TDB.Ms.Producto.Api.Routes
+﻿namespace TDB.Gateway.Api.Routes
 {
     public static class ApiRoutes
     {
@@ -16,20 +16,19 @@
             public const string Create = Base + "/producto/create";
             public const string Update = Base + "/producto/update";
             public const string Delete = Base + "/producto/delete";
-            public const string UpdateStock = Base + "/producto/updateStock";
+
+            public const string RegistrarPedido = Base + "/pedido/create";
 
         }
 
-        public static class RouteCategoria
+        public static class RoutePedido
         {
             // Read
-            public const string GetAll = Base + "/categoria/all";
-            public const string GetById = Base + "/categoria/{id}";
+            
 
-            // Write
-            public const string Create = Base + "/categoria/create";
-            public const string Update = Base + "/categoria/update";
-            public const string Delete = Base + "/categoria/delete";
+            // Write           
+            public const string RegistrarPedido = Base + "/pedido/creates";
+
         }
     }
 }

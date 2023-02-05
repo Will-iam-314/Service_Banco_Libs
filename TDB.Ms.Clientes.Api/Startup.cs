@@ -4,9 +4,9 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using TDB.Ms.Producto.Aplicacion;
+using TDB.Ms.Clientes.Aplicacion;
 
-namespace TDB.Ms.Producto.Api
+namespace TDB.Ms.Clientes.Api
 {
     public class Startup
     {
