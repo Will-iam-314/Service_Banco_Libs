@@ -1,12 +1,12 @@
-﻿//using MongoDB.Driver;
-//using TDB.Ms.Producto.Infraestructura.DBSettings;
-//using dominio = TDB.Ms.Producto.Dominio.Entidades;
+﻿using MongoDB.Driver;
+using TDB.Ms.Clientes.Infraestructura.DBSettings;
+using dominio = TDB.Ms.Clientes.Dominio.Entidades;
 
-//namespace TDB.Ms.Producto.Dominio.Servicios
-//{
-//    public class ProductoService
-//    {
-//        private IMongoCollection<dominio.Producto> _producto;
+namespace TDB.Ms.Clientes.Dominio.Servicios
+{
+   public class ClientesService
+    {
+        private IMongoCollection<dominio.Cliente> _cliente;
 
 //        public ProductoService(IDBSettings dBSettings)
 //        {
@@ -18,6 +18,6 @@
 //        public List<dominio.Producto> ListarProductos()
 //        {
 //            return _producto.Find(x => true).ToList();
-//        }
-//    }
-//}
+//       }
+    }
+}
