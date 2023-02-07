@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
-using TDB.Ms.Producto.Aplicacion.Producto;
-using static TDB.Ms.Producto.Api.Routes.ApiRoutes;
-using dominio = TDB.Ms.Producto.Dominio.Entidades;
+using BK.Usuario.Aplicacion.Usuario;
+using static BK.Usuario.Api.Routes.ApiRoutes;
+using dominio = BK.Usuario.Dominio.Entidades;
 
-namespace TDB.Ms.Producto.Api.Controllers
+namespace BK.Usuario.Api.Controllers
 {
     [ApiController]
     public class ProductoController : ControllerBase
@@ -17,35 +17,30 @@ namespace TDB.Ms.Producto.Api.Controllers
             _service = service;
         }
 
-        [HttpGet(RouteProducto.GetAll)]
-        public IEnumerable<dominio.Usuario> ListarProductos()
+        [HttpGet(RouteUsuario.GetAll)]
+        public IEnumerable<dominio.Usuario> ListarUsuario()
         {           
 
-            var listaProducto =_service.ListarProductos();
-            return listaProducto;
+            var listaUsuario =_service.ListarUsuario();
+            return listaUsuario;
         }
 
-        [HttpGet(RouteProducto.GetById)]
-        public dominio.Usuario BuscarProducto(int id)
+        [HttpGet(RouteUsuario.GetById)]
+        public dominio.Usuario BuscarUsuario(int id)
         {           
-            var objProducto = _service.BuscarPorId(id);
+            var objUsuario = _service.BuscarPorId(id);
 
-            return objProducto;
+            return objUsuario;
         }
 
-        [HttpPost(RouteProducto.Create)]
-        public ActionResult<dominio.Usuario> CrearProducto([FromBody] dominio.Usuario producto)
+        [HttpPost(RouteUsuario.Create)]
+        public ActionResult<dominio.Usuario> CrearUsuario([FromBody] dominio.Usuario usuario)
         {
-            _service.Registrar(producto);
+            _service.Registrar(usuario);
             return Ok();
         }
 
-        [HttpPost(RouteProducto.UpdateStock)]
-        public ActionResult<dominio.Usuario> UpdateStock([FromBody] dominio.Usuario producto)
-        {
-            _service.ActualizarStock(producto.idProducto, producto.cantidad);
-            return Ok();
-        }
+  
 
         //[HttpPut(RouteProducto.Update)]
         //public ActionResult<dominio.Producto> ModificarProducto(dominio.Producto producto)
@@ -73,8 +68,8 @@ namespace TDB.Ms.Producto.Api.Controllers
         //    return Ok();
         //}
 
-        [HttpDelete(RouteProducto.Delete)]
-        public ActionResult<dominio.Usuario> EliminarProducto(int id)
+        [HttpDelete(RouteUsuario.Delete)]
+        public ActionResult<dominio.Usuario> EliminarUsuario(int id)
         {
             _service.Eliminar(id);
 

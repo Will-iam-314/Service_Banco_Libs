@@ -7,7 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace TDB.Ms.Producto.Api
+namespace BK.Usuario.Api
 {
     public class Program
     {

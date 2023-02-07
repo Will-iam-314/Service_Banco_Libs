@@ -1,13 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
-using TDB.Ms.Producto.Aplicacion.Categoria;
-using static TDB.Ms.Producto.Api.Routes.ApiRoutes;
-using dominio = TDB.Ms.Producto.Dominio.Entidades;
+using BK.Usuario.Aplicacion.Rol;
+using static BK.Usuario.Api.Routes.ApiRoutes;
+using dominio = BK.Usuario.Dominio.Entidades;
 
-namespace TDB.Ms.Categoria.Api.Controllers
+namespace BK.Usuario.Api.Controllers
 {
     [ApiController]
-    public class CategoriaController : ControllerBase
+    public class RolController : ControllerBase
     {
 
         private readonly IRolService _service;
@@ -17,26 +17,26 @@ namespace TDB.Ms.Categoria.Api.Controllers
             _service = service;
         }
 
-        [HttpGet(RouteCategoria.GetAll)]
-        public IEnumerable<dominio.Rol> ListarCategorias()
+        [HttpGet(RouteRol.GetAll)]
+        public IEnumerable<dominio.Rol> ListarRol()
         {
 
-            var listaCategoria = _service.ListarCategorias();
-            return listaCategoria;
+            var listaRol = _service.ListarRol();
+            return listaRol;
         }
 
-        [HttpGet(RouteCategoria.GetById)]
-        public dominio.Rol BuscarCategoria(int id)
+        [HttpGet(RouteRol.GetById)]
+        public dominio.Rol BuscarRol(int id)
         {
-            var objCategoria = _service.Categoria(id);
+            var objRol = _service.Rol(id);
 
-            return objCategoria;
+            return objRol;
         }
 
-        [HttpPost(RouteCategoria.Create)]
-        public ActionResult<dominio.Rol> CrearCategoria([FromBody] dominio.Rol producto)
+        [HttpPost(RouteRol.Create)]
+        public ActionResult<dominio.Rol> CrearRol([FromBody] dominio.Rol rol)
         {
-            _service.RegistrarCategoria(producto);
+            _service.RegistrarRol(rol);
 
             return Ok();
         }
@@ -67,8 +67,8 @@ namespace TDB.Ms.Categoria.Api.Controllers
         //    return Ok();
         //}
 
-        [HttpDelete(RouteCategoria.Delete)]
-        public ActionResult<dominio.Rol> EliminarCategoria(int id)
+        [HttpDelete(RouteRol.Delete)]
+        public ActionResult<dominio.Rol> EliminarRol(int id)
         {
             _service.Eliminar(id);
 

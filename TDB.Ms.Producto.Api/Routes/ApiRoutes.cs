@@ -1,4 +1,4 @@
-﻿namespace TDB.Ms.Producto.Api.Routes
+﻿namespace BK.Usuario.Api.Routes
 {
     public static class ApiRoutes
     {
@@ -6,30 +6,29 @@
         public const string Version = "v1";
         public const string Base = Root + "/" + Version;
 
-        public static class RouteProducto
+        public static class RouteUsuario
         {
             // Read
-            public const string GetAll = Base + "/producto/all";
-            public const string GetById = Base + "/producto/{id}";
+            public const string GetAll = Base + "/usuario/all";
+            public const string GetById = Base + "/usuario/{id}";
 
             // Write
-            public const string Create = Base + "/producto/create";
-            public const string Update = Base + "/producto/update";
-            public const string Delete = Base + "/producto/delete";
-            public const string UpdateStock = Base + "/producto/updateStock";
+            public const string Create = Base + "/usuario/create";
+            public const string Update = Base + "/usuario/update";
+            public const string Delete = Base + "/usuario/delete";
 
         }
 
-        public static class RouteCategoria
+        public static class RouteRol
         {
             // Read
-            public const string GetAll = Base + "/categoria/all";
-            public const string GetById = Base + "/categoria/{id}";
+            public const string GetAll = Base + "/Rol/all";
+            public const string GetById = Base + "/Rol/{id}";
 
             // Write
-            public const string Create = Base + "/categoria/create";
-            public const string Update = Base + "/categoria/update";
-            public const string Delete = Base + "/categoria/delete";
+            public const string Create = Base + "/Rol/create";
+            public const string Update = Base + "/Rol/update";
+            public const string Delete = Base + "/Rol/delete";
         }
     }
 }
