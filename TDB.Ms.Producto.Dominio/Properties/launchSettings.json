@@ -1,6 +1,6 @@
 {
   "profiles": {
-    "TDB.Ms.Producto.Dominio": {
+    "BK.Usuario.Dominio": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {

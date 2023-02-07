@@ -10,15 +10,15 @@ namespace TDB.Ms.Producto.Api.Controllers
     public class ProductoController : ControllerBase
     {
 
-        private readonly IProductoService _service;
+        private readonly IUsuarioService _service;
 
-        public ProductoController(IProductoService service)
+        public ProductoController(IUsuarioService service)
         {
             _service = service;
         }
 
         [HttpGet(RouteProducto.GetAll)]
-        public IEnumerable<dominio.Producto> ListarProductos()
+        public IEnumerable<dominio.Usuario> ListarProductos()
         {           
 
             var listaProducto =_service.ListarProductos();
@@ -26,7 +26,7 @@ namespace TDB.Ms.Producto.Api.Controllers
         }
 
         [HttpGet(RouteProducto.GetById)]
-        public dominio.Producto BuscarProducto(int id)
+        public dominio.Usuario BuscarProducto(int id)
         {           
             var objProducto = _service.BuscarPorId(id);
 
@@ -34,14 +34,14 @@ namespace TDB.Ms.Producto.Api.Controllers
         }
 
         [HttpPost(RouteProducto.Create)]
-        public ActionResult<dominio.Producto> CrearProducto([FromBody] dominio.Producto producto)
+        public ActionResult<dominio.Usuario> CrearProducto([FromBody] dominio.Usuario producto)
         {
             _service.Registrar(producto);
             return Ok();
         }
 
         [HttpPost(RouteProducto.UpdateStock)]
-        public ActionResult<dominio.Producto> UpdateStock([FromBody] dominio.Producto producto)
+        public ActionResult<dominio.Usuario> UpdateStock([FromBody] dominio.Usuario producto)
         {
             _service.ActualizarStock(producto.idProducto, producto.cantidad);
             return Ok();
@@ -74,7 +74,7 @@ namespace TDB.Ms.Producto.Api.Controllers
         //}
 
         [HttpDelete(RouteProducto.Delete)]
-        public ActionResult<dominio.Producto> EliminarProducto(int id)
+        public ActionResult<dominio.Usuario> EliminarProducto(int id)
         {
             _service.Eliminar(id);
 

@@ -1,7 +1,7 @@
 ﻿using MongoDB.Driver;
 using Release.MongoDB.Repository;
 
-namespace TDB.Ms.Producto.Infraestructura
+namespace BK.Usuario.Infraestructura
 {
     public class DbContext : DataContext, IDbContext
     {

@@ -10,15 +10,15 @@ namespace TDB.Ms.Categoria.Api.Controllers
     public class CategoriaController : ControllerBase
     {
 
-        private readonly ICategoriaService _service;
+        private readonly IRolService _service;
 
-        public CategoriaController(ICategoriaService service)
+        public CategoriaController(IRolService service)
         {
             _service = service;
         }
 
         [HttpGet(RouteCategoria.GetAll)]
-        public IEnumerable<dominio.Categoria> ListarCategorias()
+        public IEnumerable<dominio.Rol> ListarCategorias()
         {
 
             var listaCategoria = _service.ListarCategorias();
@@ -26,7 +26,7 @@ namespace TDB.Ms.Categoria.Api.Controllers
         }
 
         [HttpGet(RouteCategoria.GetById)]
-        public dominio.Categoria BuscarCategoria(int id)
+        public dominio.Rol BuscarCategoria(int id)
         {
             var objCategoria = _service.Categoria(id);
 
@@ -34,7 +34,7 @@ namespace TDB.Ms.Categoria.Api.Controllers
         }
 
         [HttpPost(RouteCategoria.Create)]
-        public ActionResult<dominio.Categoria> CrearCategoria([FromBody] dominio.Categoria producto)
+        public ActionResult<dominio.Rol> CrearCategoria([FromBody] dominio.Rol producto)
         {
             _service.RegistrarCategoria(producto);
 
@@ -68,7 +68,7 @@ namespace TDB.Ms.Categoria.Api.Controllers
         //}
 
         [HttpDelete(RouteCategoria.Delete)]
-        public ActionResult<dominio.Categoria> EliminarCategoria(int id)
+        public ActionResult<dominio.Rol> EliminarCategoria(int id)
         {
             _service.Eliminar(id);
 
