@@ -5,7 +5,7 @@ using MongoDB.Driver;
 using Release.MongoDB.Repository;
 using TDB.Ms.Clientes.Aplicacion.Cliente;
 using TDB.Ms.Clientes.Infraestructura;
-using dominio = TDB.Ms.Clientes.Dominio.Entidades;
+using dominio = BK.Prestamo.Dominio.Entidades;
 
 namespace TDB.Ms.Clientes.Aplicacion
 {

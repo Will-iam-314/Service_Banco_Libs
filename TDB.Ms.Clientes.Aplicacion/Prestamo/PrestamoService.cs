@@ -3,19 +3,18 @@ using Release.MongoDB.Repository;
 using System.Linq.Expressions;
 using dominio = BK.Prestamo.Dominio.Entidades;
 
-namespace TDB.Ms.Clientes.Aplicacion.Cliente
+namespace BK.Prestamo.Aplicacion.Prestamo
 {
-
-    public class ClienteService : IClienteService
+    public class PrestamoService : IPrestamoService
     {
-        private readonly ICollectionContext<dominio.Cliente> _cliente;
-        private readonly IBaseRepository<dominio.Cliente> _clienteR;
+        private readonly ICollectionContext<dominio.Prestamo> _prestamo;
+        private readonly IBaseRepository<dominio.Prestamo> _prestamoR;
 
-        public ClienteService(ICollectionContext<dominio.Cliente> cliente, 
-                                IBaseRepository<dominio.Cliente> clienteR)
+        public PrestamoService(ICollectionContext<dominio.Prestamo> prestamo,
+                                IBaseRepository<dominio.Prestamo> prestamoR)
         {
-            _cliente = cliente;
-            _clienteR = clienteR;
+            _prestamo = prestamo;
+            _prestamoR = prestamoR;
         }
 
         public List<dominio.Cliente> ListarClientes()
@@ -28,10 +27,10 @@ namespace TDB.Ms.Clientes.Aplicacion.Cliente
         public bool Registracliente(dominio.Cliente cliente)
         {
             cliente.esEliminado = false;
-            cliente.fechaCreacion =DateTime.Now;
+            cliente.fechaCreacion = DateTime.Now;
             cliente.esActivo = true;
 
-           // _cliente.Context().InsertOne(cliente);                       
+            // _cliente.Context().InsertOne(cliente);                       
 
             var p = _clienteR.InsertOne(cliente);
 
@@ -49,7 +48,7 @@ namespace TDB.Ms.Clientes.Aplicacion.Cliente
         {
             Expression<Func<dominio.Cliente, bool>> filter = s => s.esEliminado == false && s.idCliente == idCliente;
             var item = (_cliente.Context().FindOneAndDelete(filter, null));
-            
+
         }
     }
 }

@@ -3,11 +3,12 @@ using MongoDB.Bson.Serialization.Attributes;
 using Release.MongoDB.Repository;
 using Release.MongoDB.Repository.Model;
 
+
 namespace BK.Prestamo.Dominio.Entidades
 {
-    [CollectionProperty("cliente")]
+    [CollectionProperty("prestamo")]
     [BsonIgnoreExtraElements]
-    public class Cliente : EntityToLower<ObjectId>
+    public class Prestamo : EntityToLower<ObjectId>
     {
         public int idCliente { get; set; }
 

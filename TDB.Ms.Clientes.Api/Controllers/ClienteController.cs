@@ -18,9 +18,8 @@ namespace TDB.Ms.Clientes.Api.Controllers
         }
 
         [HttpGet(RouteCliente.GetAll)]
-        public IEnumerable<dominio.Cliente> ListarClientes()
+        public List<dominio.Cliente> ListarClientes()
         {           
-
             var listaCliente =_service.ListarClientes();
             return listaCliente;
         }
