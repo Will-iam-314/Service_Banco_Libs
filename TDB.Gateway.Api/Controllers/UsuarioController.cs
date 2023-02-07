@@ -1,21 +1,21 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Collections.Generic;
 using System.Threading.Tasks;
-using static TDB.Gateway.Api.Routes.ApiRoutes;
+using static BK.Gateway.Api.Routes.ApiRoutes;
 using Productos = BK.Gateway.Aplicacion.UsuarioClient;
 //para next microservice
-using BK.Gateway.Aplicacion.Productos.Request;
+using BK.Gateway.Aplicacion.Usuario.Request;
 
 namespace BK.Gateway.Api.Controllers
 {
     [ApiController]
-    public class ProductoController : ControllerBase
+    public class UsuarioController : ControllerBase
     {
 
         private readonly Productos.IClient _productosClient;
         //private readonly Clientes.IClient _clientesClient;
 
-        public ProductoController(Productos.IClient productosClient)
+        public UsuarioController(Productos.IClient productosClient)
         {
             _productosClient = productosClient;
         }
@@ -26,10 +26,10 @@ namespace BK.Gateway.Api.Controllers
         //    _clientesClient = clientesClient;
         //}
 
-        [HttpGet(RouteProducto.GetAll)]
-        public ICollection<Productos.Producto> ListarProductos()
+        [HttpGet(RouteUsuario.GetAll)]
+        public ICollection<Productos.Usuario> ListarProductos()
         {
-            var listaProducto = _productosClient.ApiV1ProductoAllAsync().Result;
+            var listaProducto = _productosClient.ApiV1UsuarioAllAsync().Result;
             return listaProducto;
         }
 
@@ -38,12 +38,12 @@ namespace BK.Gateway.Api.Controllers
         {
             
             //var cliente = _clientesClient.ApiV1ClienteAsync(request.idCliente);
-            var producto = await _productosClient.ApiV1ProductoAsync(request.idProducto);
+            var producto = await _productosClient.ApiV1UsuarioAsync(request.idProducto);
 
             // Llamar a PedidosClient para crear el pedido
             // Llamar a PedidosClient para crear el detalle del pedido
 
-            var pedido = _productosClient.ApiV1ProductoUpdateStockAsync(producto);
+            var pedido = _productosClient.ApiV1UsuarioUpdateStockAsync(producto);
 
 
         }

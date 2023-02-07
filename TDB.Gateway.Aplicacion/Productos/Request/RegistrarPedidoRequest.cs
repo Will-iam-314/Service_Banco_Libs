@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TDB.Gateway.Aplicacion.Productos.Request
+namespace BK.Gateway.Aplicacion.Usuario.Request
 {
     public class RegistrarPedidoRequest
     {
