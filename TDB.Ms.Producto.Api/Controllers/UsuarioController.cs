@@ -7,12 +7,12 @@ using dominio = BK.Usuario.Dominio.Entidades;
 namespace BK.Usuario.Api.Controllers
 {
     [ApiController]
-    public class ProductoController : ControllerBase
+    public class UsuarioController : ControllerBase
     {
 
         private readonly IUsuarioService _service;
 
-        public ProductoController(IUsuarioService service)
+        public UsuarioController(IUsuarioService service)
         {
             _service = service;
         }
