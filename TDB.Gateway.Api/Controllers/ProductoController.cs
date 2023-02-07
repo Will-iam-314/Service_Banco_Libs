@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.Threading.Tasks;
 using static TDB.Gateway.Api.Routes.ApiRoutes;
-using Productos = TDB.Gateway.Aplicacion.ProductosClient;
-using Clientes = TDB.Gateway.Aplicacion.ClientesClient;
-using TDB.Gateway.Aplicacion.Productos.Request;
+using Productos = BK.Gateway.Aplicacion.UsuarioClient;
+//para next microservice
+using BK.Gateway.Aplicacion.Productos.Request;
 
-namespace TDB.Gateway.Api.Controllers
+namespace BK.Gateway.Api.Controllers
 {
     [ApiController]
     public class ProductoController : ControllerBase

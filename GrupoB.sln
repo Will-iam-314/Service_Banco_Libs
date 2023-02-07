@@ -21,7 +21,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API Gateway", "API Gateway"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BK.Gateway.Aplicacion", "TDB.Gateway.Aplicacion\BK.Gateway.Aplicacion.csproj", "{2C7EF1F4-7AF0-4E98-92F2-7EBFB85A7452}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TDB.Gateway.Api", "TDB.Gateway.Api\TDB.Gateway.Api.csproj", "{89852BC4-A6ED-4D21-9EEC-5EC28E6DC34B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BK.Gateway.Api", "TDB.Gateway.Api\BK.Gateway.Api.csproj", "{89852BC4-A6ED-4D21-9EEC-5EC28E6DC34B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

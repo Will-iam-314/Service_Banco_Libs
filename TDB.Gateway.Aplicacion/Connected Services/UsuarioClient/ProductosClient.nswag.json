@@ -1,14 +1,14 @@
 ﻿{
   "openapi": "3.0.1",
   "info": {
-    "title": "BK.Usuario.Api",
+    "title": "TDB.Ms.Producto.Api",
     "version": "1.0"
   },
   "paths": {
-    "/api/v1/Rol/all": {
+    "/api/v1/categoria/all": {
       "get": {
         "tags": [
-          "Rol"
+          "Categoria"
         ],
         "operationId": "all",
         "responses": {
