@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using TDB.Gateway.Aplicacion.Common;
+using BK.Gateway.Aplicacion.Common;
 using MediatR;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
@@ -9,7 +9,7 @@ using System.Collections.Generic;
 using System.Net.Http;
 using System.Reflection;
 
-namespace TDB.Gateway.Aplicacion
+namespace BK.Gateway.Aplicacion
 {
     public static class DependencyInjection
     {
@@ -27,16 +27,16 @@ namespace TDB.Gateway.Aplicacion
             var msSettings = new ClientSettings();
             configuration.Bind(nameof(ClientSettings), msSettings);
 
-            #region Cliente Ms Productos
+            #region Cliente Ms Usuario
 
-            services.AddHttpClient("MsProductos", client =>
+            services.AddHttpClient("BKUsuario", client =>
             {
-                client.BaseAddress = new Uri(msSettings.ProductosUrl);
+                client.BaseAddress = new Uri(msSettings.UsuarioUrl);
             });
 
             #endregion
 
-            services.AddTransient<ProductosClient.IClient, ProductosClient.Client>();
+            services.AddTransient<UsuarioClient.IClient, UsuarioClient.Client>();
 
             return services;
         }

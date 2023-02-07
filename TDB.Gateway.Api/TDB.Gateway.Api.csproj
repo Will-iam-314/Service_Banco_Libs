@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TDB.Gateway.Aplicacion\TDB.Gateway.Aplicacion.csproj" />
+    <ProjectReference Include="..\TDB.Gateway.Aplicacion\BK.Gateway.Aplicacion.csproj" />
   </ItemGroup>
 
   <ItemGroup>

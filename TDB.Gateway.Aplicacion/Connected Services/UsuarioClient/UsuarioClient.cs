@@ -13,7 +13,7 @@
 #pragma warning disable 3016 // Disable "CS3016 Arrays as attribute arguments is not CLS-compliant"
 #pragma warning disable 8603 // Disable "CS8603 Possible null reference return"
 
-namespace TDB.Gateway.Aplicacion.ProductosClient
+namespace BK.Gateway.Aplicacion.UsuarioClient
 {
     using System = global::System;
 
@@ -22,84 +22,84 @@ namespace TDB.Gateway.Aplicacion.ProductosClient
     {
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<System.Collections.Generic.ICollection<Categoria>> ApiV1CategoriaAllAsync();
+        System.Threading.Tasks.Task<System.Collections.Generic.ICollection<Rol>> ApiV1RolAllAsync();
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<System.Collections.Generic.ICollection<Categoria>> ApiV1CategoriaAllAsync(System.Threading.CancellationToken cancellationToken);
+        System.Threading.Tasks.Task<System.Collections.Generic.ICollection<Rol>> ApiV1RolAllAsync(System.Threading.CancellationToken cancellationToken);
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<Categoria> ApiV1CategoriaAsync(int id);
-
-        /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
-        /// <returns>Success</returns>
-        /// <exception cref="ApiException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<Categoria> ApiV1CategoriaAsync(int id, System.Threading.CancellationToken cancellationToken);
-
-        /// <returns>Success</returns>
-        /// <exception cref="ApiException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<Categoria> ApiV1CategoriaCreateAsync(Categoria body);
+        System.Threading.Tasks.Task<Rol> ApiV1RolAsync(int id);
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<Categoria> ApiV1CategoriaCreateAsync(Categoria body, System.Threading.CancellationToken cancellationToken);
+        System.Threading.Tasks.Task<Rol> ApiV1RolAsync(int id, System.Threading.CancellationToken cancellationToken);
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<Categoria> ApiV1CategoriaDeleteAsync(int? id);
-
-        /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
-        /// <returns>Success</returns>
-        /// <exception cref="ApiException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<Categoria> ApiV1CategoriaDeleteAsync(int? id, System.Threading.CancellationToken cancellationToken);
-
-        /// <returns>Success</returns>
-        /// <exception cref="ApiException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<System.Collections.Generic.ICollection<Producto>> ApiV1ProductoAllAsync();
+        System.Threading.Tasks.Task<Rol> ApiV1RolCreateAsync(Rol body);
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<System.Collections.Generic.ICollection<Producto>> ApiV1ProductoAllAsync(System.Threading.CancellationToken cancellationToken);
+        System.Threading.Tasks.Task<Rol> ApiV1RolCreateAsync(Rol body, System.Threading.CancellationToken cancellationToken);
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<Producto> ApiV1ProductoAsync(int id);
-
-        /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
-        /// <returns>Success</returns>
-        /// <exception cref="ApiException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<Producto> ApiV1ProductoAsync(int id, System.Threading.CancellationToken cancellationToken);
-
-        /// <returns>Success</returns>
-        /// <exception cref="ApiException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<Producto> ApiV1ProductoCreateAsync(Producto body);
+        System.Threading.Tasks.Task<Rol> ApiV1RolDeleteAsync(int? id);
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<Producto> ApiV1ProductoCreateAsync(Producto body, System.Threading.CancellationToken cancellationToken);
+        System.Threading.Tasks.Task<Rol> ApiV1RolDeleteAsync(int? id, System.Threading.CancellationToken cancellationToken);
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<Producto> ApiV1ProductoUpdateStockAsync(Producto body);
-
-        /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
-        /// <returns>Success</returns>
-        /// <exception cref="ApiException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<Producto> ApiV1ProductoUpdateStockAsync(Producto body, System.Threading.CancellationToken cancellationToken);
-
-        /// <returns>Success</returns>
-        /// <exception cref="ApiException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<Producto> ApiV1ProductoDeleteAsync(int? id);
+        System.Threading.Tasks.Task<System.Collections.Generic.ICollection<Usuario>> ApiV1UsuarioAllAsync();
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        System.Threading.Tasks.Task<Producto> ApiV1ProductoDeleteAsync(int? id, System.Threading.CancellationToken cancellationToken);
+        System.Threading.Tasks.Task<System.Collections.Generic.ICollection<Usuario>> ApiV1UsuarioAllAsync(System.Threading.CancellationToken cancellationToken);
+
+        /// <returns>Success</returns>
+        /// <exception cref="ApiException">A server side error occurred.</exception>
+        System.Threading.Tasks.Task<Usuario> ApiV1UsuarioAsync(int id);
+
+        /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <returns>Success</returns>
+        /// <exception cref="ApiException">A server side error occurred.</exception>
+        System.Threading.Tasks.Task<Usuario> ApiV1UsuarioAsync(int id, System.Threading.CancellationToken cancellationToken);
+
+        /// <returns>Success</returns>
+        /// <exception cref="ApiException">A server side error occurred.</exception>
+        System.Threading.Tasks.Task<Usuario> ApiV1UsuarioCreateAsync(Usuario body);
+
+        /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <returns>Success</returns>
+        /// <exception cref="ApiException">A server side error occurred.</exception>
+        System.Threading.Tasks.Task<Usuario> ApiV1UsuarioCreateAsync(Usuario body, System.Threading.CancellationToken cancellationToken);
+
+        /// <returns>Success</returns>
+        /// <exception cref="ApiException">A server side error occurred.</exception>
+        System.Threading.Tasks.Task<Usuario> ApiV1UsuarioUpdateStockAsync(Usuario body);
+
+        /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <returns>Success</returns>
+        /// <exception cref="ApiException">A server side error occurred.</exception>
+        System.Threading.Tasks.Task<Usuario> ApiV1UsuarioUpdateStockAsync(Usuario body, System.Threading.CancellationToken cancellationToken);
+
+        /// <returns>Success</returns>
+        /// <exception cref="ApiException">A server side error occurred.</exception>
+        System.Threading.Tasks.Task<Usuario> ApiV1UsuarioDeleteAsync(int? id);
+
+        /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
+        /// <returns>Success</returns>
+        /// <exception cref="ApiException">A server side error occurred.</exception>
+        System.Threading.Tasks.Task<Usuario> ApiV1UsuarioDeleteAsync(int? id, System.Threading.CancellationToken cancellationToken);
 
     }
 
@@ -140,18 +140,21 @@ namespace TDB.Gateway.Aplicacion.ProductosClient
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual System.Threading.Tasks.Task<System.Collections.Generic.ICollection<Categoria>> ApiV1CategoriaAllAsync()
+        
+        
+        public virtual System.Threading.Tasks.Task<System.Collections.Generic.ICollection<Rol>> ApiV1RolAllAsync()
         {
-            return ApiV1CategoriaAllAsync(System.Threading.CancellationToken.None);
+            return ApiV1RolAllAsync(System.Threading.CancellationToken.None);
         }
+        
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<System.Collections.Generic.ICollection<Categoria>> ApiV1CategoriaAllAsync(System.Threading.CancellationToken cancellationToken)
+        public virtual async System.Threading.Tasks.Task<System.Collections.Generic.ICollection<Rol>> ApiV1RolAllAsync(System.Threading.CancellationToken cancellationToken)
         {
             var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/v1/categoria/all");
+            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/v1/Rol/all");
 
             var client_ = _httpClient;
             var disposeClient_ = false;
@@ -185,7 +188,7 @@ namespace TDB.Gateway.Aplicacion.ProductosClient
                         var status_ = (int)response_.StatusCode;
                         if (status_ == 200)
                         {
-                            var objectResponse_ = await ReadObjectResponseAsync<System.Collections.Generic.ICollection<Categoria>>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            var objectResponse_ = await ReadObjectResponseAsync<System.Collections.Generic.ICollection<Rol>>(response_, headers_, cancellationToken).ConfigureAwait(false);
                             if (objectResponse_.Object == null)
                             {
                                 throw new ApiException("Response was null which was not expected.", status_, objectResponse_.Text, headers_, null);
@@ -214,21 +217,21 @@ namespace TDB.Gateway.Aplicacion.ProductosClient
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual System.Threading.Tasks.Task<Categoria> ApiV1CategoriaAsync(int id)
+        public virtual System.Threading.Tasks.Task<Rol> ApiV1RolAsync(int id)
         {
-            return ApiV1CategoriaAsync(id, System.Threading.CancellationToken.None);
+            return ApiV1RolAsync(id, System.Threading.CancellationToken.None);
         }
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<Categoria> ApiV1CategoriaAsync(int id, System.Threading.CancellationToken cancellationToken)
+        public virtual async System.Threading.Tasks.Task<Rol> ApiV1RolAsync(int id, System.Threading.CancellationToken cancellationToken)
         {
             if (id == null)
                 throw new System.ArgumentNullException("id");
 
             var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/v1/categoria/{id}");
+            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/v1/Rol/{id}");
             urlBuilder_.Replace("{id}", System.Uri.EscapeDataString(ConvertToString(id, System.Globalization.CultureInfo.InvariantCulture)));
 
             var client_ = _httpClient;
@@ -263,7 +266,7 @@ namespace TDB.Gateway.Aplicacion.ProductosClient
                         var status_ = (int)response_.StatusCode;
                         if (status_ == 200)
                         {
-                            var objectResponse_ = await ReadObjectResponseAsync<Categoria>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            var objectResponse_ = await ReadObjectResponseAsync<Rol>(response_, headers_, cancellationToken).ConfigureAwait(false);
                             if (objectResponse_.Object == null)
                             {
                                 throw new ApiException("Response was null which was not expected.", status_, objectResponse_.Text, headers_, null);
@@ -292,18 +295,18 @@ namespace TDB.Gateway.Aplicacion.ProductosClient
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual System.Threading.Tasks.Task<Categoria> ApiV1CategoriaCreateAsync(Categoria body)
+        public virtual System.Threading.Tasks.Task<Rol> ApiV1RolCreateAsync(Rol body)
         {
-            return ApiV1CategoriaCreateAsync(body, System.Threading.CancellationToken.None);
+            return ApiV1RolCreateAsync(body, System.Threading.CancellationToken.None);
         }
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<Categoria> ApiV1CategoriaCreateAsync(Categoria body, System.Threading.CancellationToken cancellationToken)
+        public virtual async System.Threading.Tasks.Task<Rol> ApiV1RolCreateAsync(Rol body, System.Threading.CancellationToken cancellationToken)
         {
             var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/v1/categoria/create");
+            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/v1/Rol/create");
 
             var client_ = _httpClient;
             var disposeClient_ = false;
@@ -341,7 +344,7 @@ namespace TDB.Gateway.Aplicacion.ProductosClient
                         var status_ = (int)response_.StatusCode;
                         if (status_ == 200)
                         {
-                            var objectResponse_ = await ReadObjectResponseAsync<Categoria>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            var objectResponse_ = await ReadObjectResponseAsync<Rol>(response_, headers_, cancellationToken).ConfigureAwait(false);
                             if (objectResponse_.Object == null)
                             {
                                 throw new ApiException("Response was null which was not expected.", status_, objectResponse_.Text, headers_, null);
@@ -370,18 +373,18 @@ namespace TDB.Gateway.Aplicacion.ProductosClient
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual System.Threading.Tasks.Task<Categoria> ApiV1CategoriaDeleteAsync(int? id)
+        public virtual System.Threading.Tasks.Task<Rol> ApiV1RolDeleteAsync(int? id)
         {
-            return ApiV1CategoriaDeleteAsync(id, System.Threading.CancellationToken.None);
+            return ApiV1RolDeleteAsync(id, System.Threading.CancellationToken.None);
         }
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<Categoria> ApiV1CategoriaDeleteAsync(int? id, System.Threading.CancellationToken cancellationToken)
+        public virtual async System.Threading.Tasks.Task<Rol> ApiV1RolDeleteAsync(int? id, System.Threading.CancellationToken cancellationToken)
         {
             var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/v1/categoria/delete?");
+            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/v1/Rol/delete?");
             if (id != null)
             {
                 urlBuilder_.Append(System.Uri.EscapeDataString("id") + "=").Append(System.Uri.EscapeDataString(ConvertToString(id, System.Globalization.CultureInfo.InvariantCulture))).Append("&");
@@ -420,7 +423,7 @@ namespace TDB.Gateway.Aplicacion.ProductosClient
                         var status_ = (int)response_.StatusCode;
                         if (status_ == 200)
                         {
-                            var objectResponse_ = await ReadObjectResponseAsync<Categoria>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            var objectResponse_ = await ReadObjectResponseAsync<Rol>(response_, headers_, cancellationToken).ConfigureAwait(false);
                             if (objectResponse_.Object == null)
                             {
                                 throw new ApiException("Response was null which was not expected.", status_, objectResponse_.Text, headers_, null);
@@ -449,18 +452,19 @@ namespace TDB.Gateway.Aplicacion.ProductosClient
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual System.Threading.Tasks.Task<System.Collections.Generic.ICollection<Producto>> ApiV1ProductoAllAsync()
+        
+        public virtual System.Threading.Tasks.Task<System.Collections.Generic.ICollection<Usuario>> ApiV1UsuarioAllAsync()
         {
-            return ApiV1ProductoAllAsync(System.Threading.CancellationToken.None);
+            return ApiV1UsuarioAllAsync(System.Threading.CancellationToken.None);
         }
-
+        
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<System.Collections.Generic.ICollection<Producto>> ApiV1ProductoAllAsync(System.Threading.CancellationToken cancellationToken)
+        public virtual async System.Threading.Tasks.Task<System.Collections.Generic.ICollection<Usuario>> ApiV1UsuarioAllAsync(System.Threading.CancellationToken cancellationToken)
         {
             var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/v1/producto/all");
+            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/v1/usuario/all");
 
             var client_ = _httpClient;
             var disposeClient_ = false;
@@ -494,7 +498,7 @@ namespace TDB.Gateway.Aplicacion.ProductosClient
                         var status_ = (int)response_.StatusCode;
                         if (status_ == 200)
                         {
-                            var objectResponse_ = await ReadObjectResponseAsync<System.Collections.Generic.ICollection<Producto>>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            var objectResponse_ = await ReadObjectResponseAsync<System.Collections.Generic.ICollection<Usuario>>(response_, headers_, cancellationToken).ConfigureAwait(false);
                             if (objectResponse_.Object == null)
                             {
                                 throw new ApiException("Response was null which was not expected.", status_, objectResponse_.Text, headers_, null);
@@ -523,21 +527,21 @@ namespace TDB.Gateway.Aplicacion.ProductosClient
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual System.Threading.Tasks.Task<Producto> ApiV1ProductoAsync(int id)
+        public virtual System.Threading.Tasks.Task<Usuario> ApiV1UsuarioAsync(int id)
         {
-            return ApiV1ProductoAsync(id, System.Threading.CancellationToken.None);
+            return ApiV1UsuarioAsync(id, System.Threading.CancellationToken.None);
         }
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<Producto> ApiV1ProductoAsync(int id, System.Threading.CancellationToken cancellationToken)
+        public virtual async System.Threading.Tasks.Task<Usuario> ApiV1UsuarioAsync(int id, System.Threading.CancellationToken cancellationToken)
         {
             if (id == null)
                 throw new System.ArgumentNullException("id");
 
             var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/v1/producto/{id}");
+            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/v1/usuario/{id}");
             urlBuilder_.Replace("{id}", System.Uri.EscapeDataString(ConvertToString(id, System.Globalization.CultureInfo.InvariantCulture)));
 
             var client_ = _httpClient;
@@ -572,7 +576,7 @@ namespace TDB.Gateway.Aplicacion.ProductosClient
                         var status_ = (int)response_.StatusCode;
                         if (status_ == 200)
                         {
-                            var objectResponse_ = await ReadObjectResponseAsync<Producto>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            var objectResponse_ = await ReadObjectResponseAsync<Usuario>(response_, headers_, cancellationToken).ConfigureAwait(false);
                             if (objectResponse_.Object == null)
                             {
                                 throw new ApiException("Response was null which was not expected.", status_, objectResponse_.Text, headers_, null);
@@ -601,18 +605,18 @@ namespace TDB.Gateway.Aplicacion.ProductosClient
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual System.Threading.Tasks.Task<Producto> ApiV1ProductoCreateAsync(Producto body)
+        public virtual System.Threading.Tasks.Task<Usuario> ApiV1UsuarioCreateAsync(Usuario body)
         {
-            return ApiV1ProductoCreateAsync(body, System.Threading.CancellationToken.None);
+            return ApiV1UsuarioCreateAsync(body, System.Threading.CancellationToken.None);
         }
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<Producto> ApiV1ProductoCreateAsync(Producto body, System.Threading.CancellationToken cancellationToken)
+        public virtual async System.Threading.Tasks.Task<Usuario> ApiV1UsuarioCreateAsync(Usuario body, System.Threading.CancellationToken cancellationToken)
         {
             var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/v1/producto/create");
+            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/v1/Usuario/create");
 
             var client_ = _httpClient;
             var disposeClient_ = false;
@@ -650,7 +654,7 @@ namespace TDB.Gateway.Aplicacion.ProductosClient
                         var status_ = (int)response_.StatusCode;
                         if (status_ == 200)
                         {
-                            var objectResponse_ = await ReadObjectResponseAsync<Producto>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            var objectResponse_ = await ReadObjectResponseAsync<Usuario>(response_, headers_, cancellationToken).ConfigureAwait(false);
                             if (objectResponse_.Object == null)
                             {
                                 throw new ApiException("Response was null which was not expected.", status_, objectResponse_.Text, headers_, null);
@@ -679,18 +683,18 @@ namespace TDB.Gateway.Aplicacion.ProductosClient
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual System.Threading.Tasks.Task<Producto> ApiV1ProductoUpdateStockAsync(Producto body)
+        public virtual System.Threading.Tasks.Task<Usuario> ApiV1UsuarioUpdateStockAsync(Usuario body)
         {
-            return ApiV1ProductoUpdateStockAsync(body, System.Threading.CancellationToken.None);
+            return ApiV1UsuarioUpdateStockAsync(body, System.Threading.CancellationToken.None);
         }
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<Producto> ApiV1ProductoUpdateStockAsync(Producto body, System.Threading.CancellationToken cancellationToken)
+        public virtual async System.Threading.Tasks.Task<Usuario> ApiV1UsuarioUpdateStockAsync(Usuario body, System.Threading.CancellationToken cancellationToken)
         {
             var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/v1/producto/updateStock");
+            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/v1/Usuario/updateStock");
 
             var client_ = _httpClient;
             var disposeClient_ = false;
@@ -728,7 +732,7 @@ namespace TDB.Gateway.Aplicacion.ProductosClient
                         var status_ = (int)response_.StatusCode;
                         if (status_ == 200)
                         {
-                            var objectResponse_ = await ReadObjectResponseAsync<Producto>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            var objectResponse_ = await ReadObjectResponseAsync<Usuario>(response_, headers_, cancellationToken).ConfigureAwait(false);
                             if (objectResponse_.Object == null)
                             {
                                 throw new ApiException("Response was null which was not expected.", status_, objectResponse_.Text, headers_, null);
@@ -757,18 +761,18 @@ namespace TDB.Gateway.Aplicacion.ProductosClient
 
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual System.Threading.Tasks.Task<Producto> ApiV1ProductoDeleteAsync(int? id)
+        public virtual System.Threading.Tasks.Task<Usuario> ApiV1UsuarioDeleteAsync(int? id)
         {
-            return ApiV1ProductoDeleteAsync(id, System.Threading.CancellationToken.None);
+            return ApiV1UsuarioDeleteAsync(id, System.Threading.CancellationToken.None);
         }
 
         /// <param name="cancellationToken">A cancellation token that can be used by other objects or threads to receive notice of cancellation.</param>
         /// <returns>Success</returns>
         /// <exception cref="ApiException">A server side error occurred.</exception>
-        public virtual async System.Threading.Tasks.Task<Producto> ApiV1ProductoDeleteAsync(int? id, System.Threading.CancellationToken cancellationToken)
+        public virtual async System.Threading.Tasks.Task<Usuario> ApiV1UsuarioDeleteAsync(int? id, System.Threading.CancellationToken cancellationToken)
         {
             var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/v1/producto/delete?");
+            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/v1/Usuario/delete?");
             if (id != null)
             {
                 urlBuilder_.Append(System.Uri.EscapeDataString("id") + "=").Append(System.Uri.EscapeDataString(ConvertToString(id, System.Globalization.CultureInfo.InvariantCulture))).Append("&");
@@ -807,7 +811,7 @@ namespace TDB.Gateway.Aplicacion.ProductosClient
                         var status_ = (int)response_.StatusCode;
                         if (status_ == 200)
                         {
-                            var objectResponse_ = await ReadObjectResponseAsync<Producto>(response_, headers_, cancellationToken).ConfigureAwait(false);
+                            var objectResponse_ = await ReadObjectResponseAsync<Usuario>(response_, headers_, cancellationToken).ConfigureAwait(false);
                             if (objectResponse_.Object == null)
                             {
                                 throw new ApiException("Response was null which was not expected.", status_, objectResponse_.Text, headers_, null);
@@ -938,7 +942,7 @@ namespace TDB.Gateway.Aplicacion.ProductosClient
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.18.0.0 (NJsonSchema v10.8.0.0 (Newtonsoft.Json v13.0.1.0))")]
-    public partial class Categoria
+    public partial class Rol
     {
         [Newtonsoft.Json.JsonProperty("id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public ObjectId Id { get; set; }
@@ -987,7 +991,7 @@ namespace TDB.Gateway.Aplicacion.ProductosClient
     }
 
     [System.CodeDom.Compiler.GeneratedCode("NJsonSchema", "13.18.0.0 (NJsonSchema v10.8.0.0 (Newtonsoft.Json v13.0.1.0))")]
-    public partial class Producto
+    public partial class Usuario
     {
         [Newtonsoft.Json.JsonProperty("id", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public ObjectId Id { get; set; }
@@ -1004,8 +1008,8 @@ namespace TDB.Gateway.Aplicacion.ProductosClient
         [Newtonsoft.Json.JsonProperty("esEliminado", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public bool EsEliminado { get; set; }
 
-        [Newtonsoft.Json.JsonProperty("idProducto", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
-        public int IdProducto { get; set; }
+        [Newtonsoft.Json.JsonProperty("idUsuario", Required = Newtonsoft.Json.Required.DisallowNull, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
+        public int IdUsuario { get; set; }
 
         [Newtonsoft.Json.JsonProperty("nombre", Required = Newtonsoft.Json.Required.Default, NullValueHandling = Newtonsoft.Json.NullValueHandling.Ignore)]
         public string Nombre { get; set; }

@@ -19,7 +19,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BKUsuario", "BKUsuario", "{
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "API Gateway", "API Gateway", "{1C0F21C1-9572-43F8-8012-01C360EC2CD4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TDB.Gateway.Aplicacion", "TDB.Gateway.Aplicacion\TDB.Gateway.Aplicacion.csproj", "{2C7EF1F4-7AF0-4E98-92F2-7EBFB85A7452}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BK.Gateway.Aplicacion", "TDB.Gateway.Aplicacion\BK.Gateway.Aplicacion.csproj", "{2C7EF1F4-7AF0-4E98-92F2-7EBFB85A7452}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TDB.Gateway.Api", "TDB.Gateway.Api\TDB.Gateway.Api.csproj", "{89852BC4-A6ED-4D21-9EEC-5EC28E6DC34B}"
 EndProject

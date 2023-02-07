@@ -5,9 +5,9 @@
     "Uri": "https://github.com/unchase/Unchase.OpenAPI.Connectedservice/"
   },
   "ExtendedData": {
-    "ServiceName": "ProductosClient",
+    "ServiceName": "UsuarioClient",
     "AcceptAllUntrustedCertificates": true,
-    "GeneratedFileName": "ProductosClient",
+    "GeneratedFileName": "UsuarioClient",
     "Endpoint": "http://localhost:20232/swagger/v1/swagger.json",
     "GeneratedFileNamePrefix": null,
     "GenerateCSharpClient": true,
@@ -59,7 +59,7 @@
       "WrapResponseMethods": [],
       "GenerateResponseClasses": true,
       "ResponseClass": "SwaggerResponse",
-      "Namespace": "TDB.Gateway.Aplicacion.ProductosClient",
+      "Namespace": "BK.Gateway.Aplicacion.ProductosClient",
       "RequiredPropertiesMustBeDefined": true,
       "DateType": "System.DateTimeOffset",
       "JsonConverters": null,
@@ -96,7 +96,7 @@
       "EnumNameGeneratorType": null,
       "ServiceHost": null,
       "ServiceSchemes": null,
-      "output": "ProductosClient.cs",
+      "output": "UsuarioClient.cs",
       "newLineBehavior": 0
     },
     "ExcludeTypeNamesLater": false,
