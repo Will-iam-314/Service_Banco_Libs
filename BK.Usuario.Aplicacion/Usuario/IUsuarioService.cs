@@ -7,6 +7,7 @@ namespace BK.Usuario.Aplicacion.Usuario
         dominio.Usuario BuscarPorId(int idUsuario);
 
         bool Registrar(dominio.Usuario usuario);
+        List<dominio.Usuario> ListarUsuario();
         bool Modificar(dominio.Usuario usuario);
         void Eliminar(int idUsuario);
 

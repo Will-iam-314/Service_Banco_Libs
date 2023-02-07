@@ -12,7 +12,7 @@ namespace BK.Usuario.Api.Controllers
 
         private readonly IRolService _service;
 
-        public CategoriaController(IRolService service)
+        public RolController(IRolService service)
         {
             _service = service;
         }
