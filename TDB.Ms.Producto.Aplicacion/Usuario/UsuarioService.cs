@@ -3,15 +3,16 @@ using Release.MongoDB.Repository;
 using System.Linq.Expressions;
 using dominio = BK.Usuario.Dominio.Entidades;
 
+
 namespace BK.Usuario.Aplicacion.Usuario
 {
 
-    public class ProductoService : IUsuarioService
+    public class UsuarioService : IUsuarioService
     {
         private readonly ICollectionContext<dominio.Usuario> _usuario;
         private readonly IBaseRepository<dominio.Usuario> _usuarioR;
 
-        public ProductoService(ICollectionContext<dominio.Usuario> usuario, 
+        public UsuarioService(ICollectionContext<dominio.Usuario> usuario, 
                                 IBaseRepository<dominio.Usuario> usuarioR)
         {
             _usuario = usuario;

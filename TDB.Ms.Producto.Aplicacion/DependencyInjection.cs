@@ -1,18 +1,18 @@
-﻿using Microsoft.Extensions.Configuration;
+﻿using BK.Usuario.Aplicacion.Rol;
+using BK.Usuario.Aplicacion.Usuario;
+using BK.Usuario.Infraestructura;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.DependencyInjection.Extensions;
 using MongoDB.Driver;
 using Release.MongoDB.Repository;
-using BK.Usuario.Aplicacion.Usuario;
-using BK.Usuario.Aplicacion.Rol;
-using BK.Usuario.Infraestructura;
 using dominio = BK.Usuario.Dominio.Entidades;
 
 namespace BK.Usuario.Aplicacion
 {
     public static class DependencyInjection
     {
-        public static IServiceCollection AddAplicacion(this IServiceCollection services, IConfiguration configuration) 
+        public static IServiceCollection AddAplicacion(this IServiceCollection services, IConfiguration configuration)
         {
             #region Mongo
 
