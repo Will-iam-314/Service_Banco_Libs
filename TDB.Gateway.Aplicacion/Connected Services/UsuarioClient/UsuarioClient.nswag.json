@@ -1,14 +1,14 @@
 ﻿{
   "openapi": "3.0.1",
   "info": {
-    "title": "TDB.Ms.Producto.Api",
+    "title": "BK.Usuario.Api",
     "version": "1.0"
   },
   "paths": {
-    "/api/v1/categoria/all": {
+    "/api/v1/rol/all": {
       "get": {
         "tags": [
-          "Categoria"
+          "Rol"
         ],
         "operationId": "all",
         "responses": {
@@ -395,35 +395,16 @@
   },
   "components": {
     "schemas": {
-      "Categoria": {
+      "Rol": {
         "type": "object",
         "additionalProperties": false,
         "properties": {
           "id": {
             "$ref": "#/components/schemas/ObjectId"
           },
-          "fechaCreacion": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "esActivo": {
-            "type": "boolean"
-          },
-          "fechaModificacion": {
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "esEliminado": {
-            "type": "boolean"
-          },
-          "idCategoria": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "nombre": {
-            "type": "string",
-            "nullable": true
+          "Descripcion": {
+            "type": "string"
+          
           }
         }
       },
@@ -461,44 +442,33 @@
           }
         }
       },
-      "Producto": {
+      "Usuario": {
         "type": "object",
         "additionalProperties": false,
         "properties": {
           "id": {
             "$ref": "#/components/schemas/ObjectId"
           },
-          "fechaCreacion": {
-            "type": "string",
-            "format": "date-time"
+          "UserName": {
+            "type": "string"
+            
           },
-          "esActivo": {
-            "type": "boolean"
-          },
-          "fechaModificacion": {
-            "type": "string",
-            "format": "date-time",
-            "nullable": true
-          },
-          "esEliminado": {
-            "type": "boolean"
-          },
-          "idProducto": {
+          "Password": {
             "type": "integer",
             "format": "int32"
           },
-          "nombre": {
-            "type": "string",
-            "nullable": true
+          "Nombres": {
+            "type": "string"
+            
           },
-          "precio": {
-            "type": "number",
-            "format": "double"
+          "Appelidos": {
+            "type": "string"
           },
-          "cantidad": {
+          "idRol": {
             "type": "integer",
             "format": "int32"
           }
+      
         }
       }
     }

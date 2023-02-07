@@ -154,7 +154,7 @@ namespace BK.Gateway.Aplicacion.UsuarioClient
         public virtual async System.Threading.Tasks.Task<System.Collections.Generic.ICollection<Rol>> ApiV1RolAllAsync(System.Threading.CancellationToken cancellationToken)
         {
             var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/v1/Rol/all");
+            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/v1/rol/all");
 
             var client_ = _httpClient;
             var disposeClient_ = false;
@@ -231,7 +231,7 @@ namespace BK.Gateway.Aplicacion.UsuarioClient
                 throw new System.ArgumentNullException("id");
 
             var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/v1/Rol/{id}");
+            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/v1/rol/{id}");
             urlBuilder_.Replace("{id}", System.Uri.EscapeDataString(ConvertToString(id, System.Globalization.CultureInfo.InvariantCulture)));
 
             var client_ = _httpClient;
@@ -306,7 +306,7 @@ namespace BK.Gateway.Aplicacion.UsuarioClient
         public virtual async System.Threading.Tasks.Task<Rol> ApiV1RolCreateAsync(Rol body, System.Threading.CancellationToken cancellationToken)
         {
             var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/v1/Rol/create");
+            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/v1/rol/create");
 
             var client_ = _httpClient;
             var disposeClient_ = false;
@@ -384,7 +384,7 @@ namespace BK.Gateway.Aplicacion.UsuarioClient
         public virtual async System.Threading.Tasks.Task<Rol> ApiV1RolDeleteAsync(int? id, System.Threading.CancellationToken cancellationToken)
         {
             var urlBuilder_ = new System.Text.StringBuilder();
-            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/v1/Rol/delete?");
+            urlBuilder_.Append(BaseUrl != null ? BaseUrl.TrimEnd('/') : "").Append("/api/v1/rol/delete?");
             if (id != null)
             {
                 urlBuilder_.Append(System.Uri.EscapeDataString("id") + "=").Append(System.Uri.EscapeDataString(ConvertToString(id, System.Globalization.CultureInfo.InvariantCulture))).Append("&");
