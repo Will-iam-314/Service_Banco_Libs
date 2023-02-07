@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TDB.Ms.Producto.Dominio
+namespace BK.Usuario.Dominio
 {
     public class Document : IDocument, IDocument<Guid>
     {

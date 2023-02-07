@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 //using TDB.Ms.Producto.Infraestructura.Context;
 
-namespace TDB.Ms.Producto.Infraestructura
+namespace BK.Usuario.Infraestructura
 {
     public static class DependencyInjection
     {

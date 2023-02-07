@@ -1,6 +1,6 @@
 ﻿using System.Reflection.Metadata;
 
-namespace TDB.Ms.Producto.Dominio
+namespace BK.Usuario.Dominio
 {
     public class Base : Document
     {

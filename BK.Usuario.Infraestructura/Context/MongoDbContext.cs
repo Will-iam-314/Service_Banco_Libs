@@ -7,9 +7,9 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
-using TDB.Ms.Producto.Infraestructura.Common;
+using BK.Usuario.Infraestructura.Common;
 
-namespace TDB.Ms.Producto.Infraestructura
+namespace BK.Usuario.Infraestructura
 {
     public class MongoDbContext : IMongoDbContext
     {

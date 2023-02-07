@@ -1,7 +1,7 @@
 ﻿using MongoDB.Bson;
 using MongoDB.Driver;
 
-namespace TDB.Ms.Producto.Infraestructura.Context
+namespace BK.Usuario.Infraestructura.Context
 {
     public class CollectionContext : ICollectionContext
     {

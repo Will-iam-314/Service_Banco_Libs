@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TDB.Ms.Producto.Infraestructura.Common
+namespace BK.Usuario.Infraestructura.Common
 {
     [AttributeUsage(AttributeTargets.Class)]
     public class CollectionNameAttribute : Attribute

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TDB.Ms.Producto.Infraestructura.Context
+namespace BK.Usuario.Infraestructura.Context
 {
     internal class UnitOfWork : IUnitOfWork, IDisposable
     {

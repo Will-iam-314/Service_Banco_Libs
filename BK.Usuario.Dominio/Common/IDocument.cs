@@ -1,4 +1,4 @@
-﻿namespace TDB.Ms.Producto.Dominio
+﻿namespace BK.Usuario.Dominio
 {
     public interface IDocument<TKey> where TKey : IEquatable<TKey>
     {

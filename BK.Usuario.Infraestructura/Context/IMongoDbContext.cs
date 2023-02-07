@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace TDB.Ms.Producto.Infraestructura
+namespace BK.Usuario.Infraestructura
 {
     public interface IMongoDbContext
     {
