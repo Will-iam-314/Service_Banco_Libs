@@ -16,8 +16,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\BK.Usuario.Dominio\BK.Usuario.Dominio.csproj" />
-    <ProjectReference Include="..\BK.Usuario.Infraestructura\BK.Usuario.Infraestructura.csproj" />
+    <ProjectReference Include="..\TDB.Ms.Producto.Dominio\BK.Usuario.Dominio.csproj" />
+    <ProjectReference Include="..\TDB.Ms.Producto.Infraestructura\BK.Usuario.Infraestructura.csproj" />
   </ItemGroup>
 
 </Project>
